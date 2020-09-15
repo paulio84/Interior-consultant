@@ -30,6 +30,11 @@ li {
   list-style: none;
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 img {
   height: auto;
   width: 100%;
@@ -39,6 +44,10 @@ img {
   margin: 0 auto;
   max-width: 1274px;
   padding: 0 1em;
+}
+
+.active {
+  font-weight: 700;
 }
 
 /* Header */
@@ -90,11 +99,11 @@ img {
 .designer-card {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  left: 18%;
+  left: 15%;
   padding: 1em;
   position: absolute;
   top: 75%;
-  width: 75%;
+  width: 80%;
 }
 .designer-card--header {
   align-items: center;
@@ -124,7 +133,7 @@ img {
   display: flex;
   font-weight: 600;
   justify-content: center;
-  margin-top: 11rem;
+  margin-top: 12rem;
 }
 
 .footer-content {
@@ -132,4 +141,80 @@ img {
   padding: 0.5em 0 2em 0;
   text-align: center;
   width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  .designer-card {
+    left: 25%;
+    top: 80%;
+    width: 70%;
+  }
+  .designer-card--header-name {
+    font-size: 1em;
+    margin-bottom: 0.6em;
+  }
+  .designer-card--header-job {
+    font-size: 0.8571428571428571em;
+  }
+  .designer-card--content {
+    font-size: 1.5em;
+  }
+  .footer {
+    margin-top: 14rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    align-items: center;
+    margin: 3rem 0 4.5rem 0;
+    justify-content: space-between;
+  }
+  .header--nav {
+    display: block;
+    font-weight: 500;
+  }
+  .header--nav ul {
+    display: flex;
+  }
+  .header--nav ul li {
+    margin-left: 6rem;
+  }
+
+  .designer-card {
+    left: 40%;
+    top: 82%;
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    margin: 4.2rem 0 17rem 0;
+  }
+
+  .what-we-do--header {
+    font-size: 3.4285714285714284em;
+  }
+  .what-we-do--content {
+    font-size: 1.7142857142857142em;
+  }
+  .what-we-do--read-more {
+    font-size: 1.2857142857142858em;
+  }
+
+  .designer-card--header-job {
+    font-size: 0.8571428571428571em;
+  }
+  .designer-card--content {
+    font-size: 1.7142857142857142em;
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .footer {
+    margin-top: 21.5rem;
+  }
 }
