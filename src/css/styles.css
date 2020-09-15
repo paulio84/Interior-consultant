@@ -43,3 +43,61 @@ img {
   max-width: 1274px;
   padding: 0 1em;
 }
+
+/* Header */
+.header {
+  display: flex;
+  margin: 2rem 0 3.8rem 0;
+}
+.header--title {
+  border: 1px solid #ffffff;
+  font-weight: 200;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.header--nav {
+  display: none;
+}
+
+/* ======= */
+.what-we-do {
+  margin-bottom: 2.5rem;
+}
+.what-we-do--header {
+  font-family: 'Lora', serif;
+  font-size: 2.5714285714285716em;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
+}
+.what-we-do--content {
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  width: 70%;
+}
+.what-we-do--read-more {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  line-height: 0;
+}
+.what-we-do--read-more span {
+  margin-left: 15px;
+}
+
+.designed-by {
+  position: relative;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.footer-content {
+  border-top: 1px solid #a9a9a9;
+  padding: 0.5em 0 2em 0;
+  text-align: center;
+  width: 80%;
+}
