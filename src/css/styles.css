@@ -83,7 +83,7 @@ img {
 }
 .what-we-do--read-more {
   align-items: center;
-  display: flex;
+  display: inline-flex;
   font-weight: 600;
   line-height: 0;
 }
