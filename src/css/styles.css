@@ -64,6 +64,7 @@ img {
 }
 .header--nav {
   display: none;
+  font-weight: 500;
 }
 
 /* ======= */
@@ -83,7 +84,7 @@ img {
 }
 .what-we-do--read-more {
   align-items: center;
-  display: flex;
+  display: inline-flex;
   font-weight: 600;
   line-height: 0;
 }
@@ -172,7 +173,6 @@ img {
   }
   .header--nav {
     display: block;
-    font-weight: 500;
   }
   .header--nav ul {
     display: flex;
