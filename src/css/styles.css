@@ -245,6 +245,8 @@ img {
   }
   .header--nav {
     display: block;
+    height: initial;
+    width: initial;
   }
   .header--nav ul {
     display: flex;
@@ -252,7 +254,13 @@ img {
   .header--nav ul li {
     margin-left: 6rem;
   }
-
+  .nav-link {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .menu-icon {
+    display: none;
+  }
   .designer-card {
     left: 40%;
     top: 82%;
