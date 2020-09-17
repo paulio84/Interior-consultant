@@ -80,7 +80,7 @@ img {
   pointer-events: none;
 }
 
-/* Menu Navigation */
+/* Mobile Menu Navigation */
 .menu-trigger {
   display: none;
 }
@@ -114,13 +114,14 @@ img {
   width: 200vw;
   z-index: 10;
 }
+
+/* Mobile Menu Open Navigation Links */
 #menu-trigger:checked ~ .header--nav > ul > .nav-link {
   opacity: 1;
   margin-top: 4rem;
   pointer-events: all;
   transition: opacity 0.4s ease 0.4s;
 }
-
 #menu-trigger:checked ~ .header--nav > ul > .nav-link:nth-child(1) {
   opacity: 1;
   margin-top: 0;
@@ -137,6 +138,23 @@ img {
 #menu-trigger:checked ~ .header--nav > ul > .nav-link:nth-child(4) {
   opacity: 1;
   transition: opacity 0.4s ease 0.7s;
+}
+
+/* Mobile Menu Open Icon */
+#menu-trigger:checked ~ .menu-icon > .menu-icon-line {
+  margin: 0;
+  transition: all 0.4s ease;
+}
+#menu-trigger:checked ~ .menu-icon > .menu-icon-line:nth-child(1) {
+  transform: rotate(45deg) translate(0px, -6px);
+  transform-origin: left;
+}
+#menu-trigger:checked ~ .menu-icon > .menu-icon-line:nth-child(2) {
+  opacity: 0;
+}
+#menu-trigger:checked ~ .menu-icon > .menu-icon-line:nth-child(3) {
+  transform: rotate(-45deg) translate(-1px, 7px);
+  transform-origin: left;
 }
 
 /* ======= */
